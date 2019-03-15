@@ -1,5 +1,5 @@
 # AJAX and JavaScript GET
-A basic boilerplate for AJAX with JavaScript using JSON
+A basic boilerplate for AJAX with JavaScript using JSON.
 
 ## AJAX Steps
 * Create an XMLHTTP Request Object
