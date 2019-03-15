@@ -1,7 +1,7 @@
 //create xmlhttp request object
 const xhr = new XMLHttpRequest();
 
- // create callback function to do something with response
+ // create callback
 xhr.onreadystatechange = function () {
 	if(xhr.readyState === 4) {
 		if(xhr.status === 200) {
@@ -10,13 +10,13 @@ xhr.onreadystatechange = function () {
 			let statusHTML = '<ul class="bulleted">';
 			
 			for (let i = 0; i < employees.length; i ++) {
-			if (employees[i].inoffice === true) {
-			statusHTML += '<li class="in">';
-			} else {
-			statusHTML += '<li class="out">';  
-			}
-			statusHTML += employees[i].name;
-			statusHTML += '</li>';
+				if (employees[i].inoffice === true) {
+					statusHTML += '<li class="in">';
+				} else {
+					statusHTML += '<li class="out">';  
+				}
+				statusHTML += employees[i].name;
+				statusHTML += '</li>';
 			}
 			
 			statusHTML += '</ul>'; 
@@ -28,7 +28,7 @@ xhr.onreadystatechange = function () {
 	}
 };
 
-//open a request (prepare browser for sending request)
+//open a request
 xhr.open('GET', 'data/employees.json');
 
 //send the request
