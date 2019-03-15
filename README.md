@@ -1,4 +1,4 @@
-# AJAX and JavaScript
+# AJAX and JavaScript GET
 A boilerplate for AJAX and JSON.
 
 ## AJAX Steps
